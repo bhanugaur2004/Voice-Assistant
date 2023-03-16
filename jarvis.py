@@ -54,11 +54,30 @@ def standard():
         if 'first' in query:
             speak("Hello, small kid.")
             speak("The subjects in first class are: Mathematics, Hindi, English, Urdu")
-            webbrowser.open("https://ncert.nic.in/textbook.php?aemh1=0-13")
+            speak("Which subject do you want to study?")
+            query = takeCommand().lower()
+            if 'maths' in query:
+                speak("Now you can enjoy study maths ")
+                webbrowser.open("https://ncert.nic.in/textbook.php?aemh1=0-13")
+                speak("Thank you")
+            elif 'hindi' in query:
+                speak("Now you can enjoy study hindi")
+                webbrowser.open("https://ncert.nic.in/textbook.php?ahhn1=0-19")
+                speak("Thank you")
+            elif 'english' in query:
+                speak("Now you can enjoy study english")
+                webbrowser.open("https://ncert.nic.in/textbook.php?aerd1=0-19")
+                speak("Thank you")
+            elif 'urdu' in query:
+                speak("Now you can enjoy study urdu")
+                webbrowser.open("https://ncert.nic.in/textbook.php?aulb1=0-27")
+                speak("Thank you")
+            
         elif 'second' in query:
             speak("Hello, small kid.")
             speak("The subjects are: English, Maths, Hindi, Urdu")
             webbrowser.open("https://ncert.nic.in/textbook.php?been1=0-10")
+
         elif 'third' in query:
             speak("Hello, small kid.")
             speak("The subjects are: English, Maths, Hindi, Urdu, Evs")
@@ -68,10 +87,12 @@ def standard():
             speak("Hello, small kid.")
             speak("The subjects are: English, Maths, Hindi, Urdu, Evs")
             webbrowser.open("https://ncert.nic.in/textbook.php?deap1=0-27")
+
         elif 'fifth' in query:
             speak("Hello, small kid.")
             speak("The subjects are: English, Maths, Hindi, Urdu, Evs")
             webbrowser.open("https://ncert.nic.in/textbook.php?ehhn1=0-18")
+
         elif 'sixth' in query:
             speak("Hello, small kid.")
             speak("The subjects are: English, Maths, Hindi, Social Science, Sanskrit, Urdu, Science")
