@@ -274,7 +274,7 @@ if __name__ == "__main__":
             webbrowser.open("https://youtu.be/SuLiu5AK9Ps")
 
         elif 'sleep' in query:
-            time.sleep(5)
+            time.sleep(60)
 
 
         elif 'quit' in query:
