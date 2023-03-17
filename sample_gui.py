@@ -1,3 +1,7 @@
+import tkinter as tk
+from tkinter import *
+from tkinter import filedialog
+from tkinter.ttk import Combobox
 import pyttsx3
 import speech_recognition as sr
 import datetime
@@ -24,7 +28,6 @@ def wishMe():
     else:
         speak("Good Evening")
     speak("Hello Boss. I am Jarvis.Please tell me. How may I help you sir")
-    # speak("Mummy I will give you my whole time. Sorry")
 
 def takeCommand():
     r = sr.Recognizer()
@@ -44,10 +47,11 @@ def takeCommand():
         return "None"
     return query
 
+
 def standard():
-    speak("  Are you interested in telling us your standard.")
+    speak("Are you interested in telling us your standard.")
     query = takeCommand().lower()
-    if 'yes' or 'ok' in query:
+    if 'ok' in query:
         speak("Thank you for your support.")
         speak("Please tell me your standard.")
         query = takeCommand().lower()
@@ -129,15 +133,13 @@ def standard():
             webbrowser.open("https://ncert.nic.in/textbook.php?lebo1=0-16")
     else:
         speak("Thank you")
-        speak("You can explore various other technologies.")
-        
-    
+        speak("Enjoy our technology.")
 
-if __name__ == "__main__":
+def main():
     # speak("Bhanu I Love you.")
     wishMe()
-    standard()
-    speak("Are you ready to explore. Please tell me what can I do for you.")
+    # standard()
+    # speak("Are you ready to explore. Please tell me what can I do for you.")
     while True:
         query = takeCommand().lower()
 
@@ -301,3 +303,18 @@ if __name__ == "__main__":
         elif 'quit' in query:
             speak("Good Bye Boss. Have a nice day. ")
             exit()
+
+root = Tk()
+root.title("Speech Recognition")
+root.geometry("1000x550+200+200")
+root.resizable(False,False)
+
+# image_icon=PhotoImage(file='speak.png')
+# btn=Button(root,text="SPEAK", width=130, font="arial 14 bold", bg="#39c790", image=image_icon, compound=LEFT, command=main)
+# btn.place(x=150,y=100)
+
+image_icon=PhotoImage(file='speak.png')
+btn=Button(root,text="STANDARD", width=170, font="arial 14 bold", bg="#39c790", image=image_icon, compound=LEFT, command=standard)
+btn.place(x=350,y=100)
+
+root.mainloop()
