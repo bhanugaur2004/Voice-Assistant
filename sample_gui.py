@@ -309,12 +309,12 @@ root.title("Speech Recognition")
 root.geometry("1000x550+200+200")
 root.resizable(False,False)
 
-# image_icon=PhotoImage(file='speak.png')
-# btn=Button(root,text="SPEAK", width=130, font="arial 14 bold", bg="#39c790", image=image_icon, compound=LEFT, command=main)
-# btn.place(x=150,y=100)
-
 image_icon=PhotoImage(file='speak.png')
-btn=Button(root,text="STANDARD", width=170, font="arial 14 bold", bg="#39c790", image=image_icon, compound=LEFT, command=standard)
-btn.place(x=350,y=100)
+btn=Button(root,text="SPEAK", width=130, font="arial 14 bold", bg="#39c790", image=image_icon, compound=LEFT, command=main)
+btn.place(x=150,y=100)
+
+# image_icon=PhotoImage(file='speak.png')
+# btn=Button(root,text="STANDARD", width=170, font="arial 14 bold", bg="#39c790", image=image_icon, compound=LEFT, command=standard)
+# btn.place(x=350,y=100)
 
 root.mainloop()
