@@ -1,3 +1,3 @@
-import urllib.request
+import pywhatkit as pwt
 
-html = urllib.urlopen("https://www.youtube.com/results?search_query=mozart")
+pwt.playonyt("Python for beginners")
