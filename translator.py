@@ -1,7 +1,7 @@
 import googletrans
 import speech_recognition
 import gtts
-import playsound
+# import playsound
 import os
 
 input_lang = "en"

@@ -33,19 +33,13 @@ Top_frame.place(x=0,y=100)
 
 btn=Button(root,text="Speak", width=10, font="arial 14 bold", bg="#39c790")
 btn.place(x=400,y=160)
-btn=Button(root,text="Standard", width=10, font="arial 14 bold", bg="#39c790")
-btn.place(x=650,y=160)
-btn=Button(root,text="Sleep", width=10, font="arial 14 bold", bg="#39c790")
-btn.place(x=400,y=280)
-btn=Button(root,text="Exit", width=10, font="arial 14 bold", bg="#39c790")
-btn.place(x=650,y=280)
-
-
-
-
-
-
-
+btn2=Button(root,text="Standard", width=10, font="arial 14 bold", bg="#39c790")
+btn2.place(x=650,y=160)
+btn3=Button(root,text="Sleep", width=10, font="arial 14 bold", bg="#39c790")
+btn3.place(x=400,y=280)
+btn4=Button(root,text="Exit", width=10, font="arial 14 bold", bg="#39c790")
+btn4.pack()
+btn4.place(x=650,y=280)
 
 
 root.mainloop()
