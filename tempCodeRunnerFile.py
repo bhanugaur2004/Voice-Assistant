@@ -1,2 +1,7 @@
-Logo = PhotoImage(file="speaker logo.png")
-Label(Top_frame,image=Logo, bg="white").place(x=10,y=5)
+ # img = Image.open("R.png")
+    # img = img.resize((50, 50), Image.ANTIALIAS)
+    # img = ImageTk.PhotoImage(img)
+
+    # label = Label(root, image=img, bg="#3e8187")
+    # label.pack()
+    # label.place(x=450, y=150)

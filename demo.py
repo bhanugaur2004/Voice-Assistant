@@ -434,6 +434,9 @@ def translator():
                 font="arial 14 bold", bg="#39c790")
     btn2.place(x=530, y=160)
 
+    Label(root,text="to",font="arial 20 bold", bg="#3e8187", fg="Black").place(x=460,y=160)
+
+
     # img = Image.open("R.png")
     # img = img.resize((50, 50), Image.ANTIALIAS)
     # img = ImageTk.PhotoImage(img)
@@ -445,11 +448,14 @@ def translator():
     btn3 = Button(root, text="Speak", width=10, font="arial 14 bold", bg="#39c790", command=transhien)
     btn3.place(x=740, y=160)
 
-    btn4 = Button(root, text="Hindi", width=10, font="arial 14 bold", bg="#39c790")
+    btn4 = Button(root, text="English", width=10, font="arial 14 bold", bg="#39c790")
     btn4.place(x=300, y=250)
-    btn5 = Button(root, text="English", width=10,
+    btn5 = Button(root, text="Hindi", width=10,
                 font="arial 14 bold", bg="#39c790")
     btn5.place(x=530, y=250)
+
+    Label(root,text="to",font="arial 20 bold", bg="#3e8187", fg="Black").place(x=460,y=250)
+
     # img1 = Image.open("a.png")
     # img1 = img1.resize((50, 50), Image.ANTIALIAS)
     # img1 = ImageTk.PhotoImage(img1)
