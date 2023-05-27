@@ -297,6 +297,9 @@ if __name__ == "__main__":
         elif 'sleep' in query:
             time.sleep(60)
 
+        elif 'dance' in query:
+            speak("I can't dance. Its not my job")
+
 
         elif 'quit' in query:
             speak("Good Bye Boss. Have a nice day. ")
